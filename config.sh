@@ -25,7 +25,7 @@
 AUTOMOUNT=false
 
 # Set to true if you need to load system.prop
-PROPFILE=false
+PROPFILE=true
 
 # Set to true if you need post-fs-data script
 POSTFSDATA=false
@@ -40,9 +40,9 @@ LATESTARTSERVICE=false
 # Set what you want to show when installing your mod
 
 print_modname() {
-  ui_print "************************************"
-  ui_print " Magisk Module Template, by Addicted"
-  ui_print "************************************"
+  ui_print "*******************************"
+  ui_print "  MI A1 Gcam Mod, by Addicted  "
+  ui_print "*******************************"
 }
 
 ##########################################################################################
