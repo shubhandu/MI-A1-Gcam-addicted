@@ -1,7 +1,7 @@
-id=template
-name=Template Module
-version=v1
+id=mi_a1_gcam
+name=MI A1 Gcam Mod
+version=v1.0
 versionCode=1
-author=topjohnwu
-description=A short description
+author=Addicted
+description=Enables camera EIS, HAL3, Slow motion mod,disables noise cancellation,.
 minMagisk=1500
