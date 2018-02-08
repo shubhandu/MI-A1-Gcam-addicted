@@ -136,6 +136,19 @@ $POSTFSDATA && cp -af $INSTALLER/common/post-fs-data.sh $MODPATH/post-fs-data.sh
 # service mode scripts
 $LATESTARTSERVICE && cp -af $INSTALLER/common/service.sh $MODPATH/service.sh
 
+ui_print "- Modding media_profiles.xml for SlowMo "
+if [ -f "/system/etc/media_profiles.xml" -o -f "/dev/magisk/mirror/system/etc/media_profiles.xml" ]; then
+  mkdir -p $MODPATH/system/etc/
+  if [ -f /dev/magisk/mirror/system/etc/media_profiles.xml ]; then
+    cp -af /dev/magisk/mirror/system/etc/media_profiles.xml $MODPATH/system/etc/media_profiles.xml
+  else
+    cp -af /system/etc/media_profiles.xml $MODPATH/system/etc/media_profiles.xml
+  fi
+  sed -i '/<\/CamcorderProfiles>/ s#.*#<EncoderProfile quality="highspeedlow" fileFormat="mp4" duration="30"><Video codec="h264" bitRate="42000000" width="1280" height="720" frameRate="120" /><Audio codec="aac" bitRate="96000" sampleRate="48000" channels="1" /></EncoderProfile><EncoderProfile quality="highspeedhigh" fileFormat="mp4" duration="30"><Video codec="h264" bitRate="42000000" width="1920" height="1080" frameRate="60" /><Audio codec="aac" bitRate="96000" sampleRate="48000" channels="1" /></EncoderProfile><EncoderProfile quality="highspeed720p" fileFormat="mp4" duration="30"><Video codec="h264" bitRate="42000000" width="1280" height="720" frameRate="120" /><Audio codec="aac" bitRate="96000" sampleRate="48000" channels="1" /></EncoderProfile><EncoderProfile quality="highspeed1080p" fileFormat="mp4" duration="30"><Video codec="h264" bitRate="42000000" width="1920" height="1080" frameRate="60" /><Audio codec="aac" bitRate="96000" sampleRate="48000" channels="1" /></EncoderProfile></CamcorderProfiles>#g' $MODPATH/system/etc/media_profiles.xml
+else
+  ui_print "- SlowMo Modding FAILED"
+fi
+
 ui_print "- Setting permissions"
 set_permissions
 
