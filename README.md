@@ -1,7 +1,7 @@
 # Xiaomi A1 Gcam Tweaks for Oreo
 
 ## Features
- - Adds camera EIS, disables mic noise cancelation, forces HAL3, Fixes headphone hiss.
+ - Adds camera EIS, disables mic noise cancellation, forces HAL3, Fixes headphone hiss.
  - SlowMotion in Gcam not working in Oreo. However Slowmotion in Stock Camera Working fine.
 
 ## Error
