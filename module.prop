@@ -4,4 +4,4 @@ version=v1.0
 versionCode=1
 author=Addicted
 description=Enables camera EIS, HAL3, Slow motion mod,disables noise cancellation,.
-minMagisk=1500
+minMagisk=1530
