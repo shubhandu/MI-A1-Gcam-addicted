@@ -5,3 +5,4 @@ persist.camera.eis.enable=1
 persist.camera.HAL3.enabled=1
 ro.qc.sdk.audio.fluencetype=fluencepro
 mm.enable.qcom_parser=3183219
+vendor.camera.aux.packagelist2=com.google.android.GoogleCameraWide
