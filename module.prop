@@ -3,5 +3,5 @@ name=MI A1 Gcam Mod
 version=v1.0
 versionCode=1
 author=Addicted
-description=Enables camera EIS, HAL3, Slow motion mod,disables noise cancellation,.
+description=Enables camera EIS, HAL3, Slow motion mod, disables noise cancellation, telephoto Lens support.
 minMagisk=1530
