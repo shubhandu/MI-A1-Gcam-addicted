@@ -2,7 +2,7 @@
 
 ## Features
  - Adds camera EIS, disables mic noise cancellation in GCam, forces HAL3, Fixes headphone hiss.
- - Add telephoto Lens support with cstark27 wide Lens version.
+ - Add telephoto Lens support with cstark27 wide Lens version.(Thanks to sipollo)
  - SlowMotion in Gcam not working in Oreo. However Slowmotion in Stock Camera Working fine.
 
 ## Error
